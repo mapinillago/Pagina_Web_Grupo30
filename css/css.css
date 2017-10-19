@@ -1,0 +1,150 @@
+@import "normalize.css";
+@import "estilo.css";
+
+/**  * Variables.  */
+:root {
+    --large-breakpoint: 64em;
+    --medium-breakpoint: 42em;
+
+    --header-heading-color: #fff;
+    --header-bg-color: #159957;
+    --header-bg-color-secondary: #155799;
+
+    --section-headings-color: #159957;
+    --body-text-color: #606c71;
+    --body-link-color: #1e6bb8;
+    --blockquote-text-color: #819198;
+
+    --code-bg-color: #f3f6fa;
+    --code-text-color: #567482;
+
+    --border-color: #dce6f0;
+    --table-border-color: #e9ebec;
+    --hr-border-color: #eff0f1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--body-text-color);
+}
+
+a {
+    color: var(--body-link-color);
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.3rem;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+.btn:hover {
+     color: rgba(255, 255, 255, 0.8);
+     text-decoration: none;
+     background-color: rgba(255, 255, 255, 0.2);
+     border-color: rgba(255, 255, 255, 0.3);
+ }
+
++ .btn {
+    margin-left: 1rem;
+}
+
+.page-header {
+    color: var(--header-heading-color);
+    text-align: center;
+    background-color: var(--header-bg-color);
+    background-image: linear-gradient(120deg, var(--header-bg-color-secondary), var(--header-bg-color));
+}
+
+.main-content {
+    word-wrap: break-word;
+}
+.main-content:first-child {
+    margin-top: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    color: var(--section-headings-color);
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+code {
+    padding: 2px 4px;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 0.9rem;
+    color: var(--code-text-color);
+    background-color: var(--code-bg-color);
+    border-radius: 0.3rem;
+}
+
+pre {
+    padding: 0.8rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    color: var(--code-text-color);
+    word-wrap: normal;
+    background-color: var(--code-bg-color);
+    border: solid 1px var(--border-color);
+    border-radius: 0.3rem;
+}
+> code {
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--code-text-color);
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+
+}
+
+.highlight {
+    margin-bottom: 1rem;
+}
+
+.site-footer {
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: solid 1px var(--hr-border-color);
+}
+
+.site-footer-owner {
+    display: block;
+    font-weight: bold;
+}
+
+.site-footer-credits {
+    color: var(--blockquote-text-color);
+}
+
