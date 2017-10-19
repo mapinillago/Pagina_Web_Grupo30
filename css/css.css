@@ -8,7 +8,7 @@
 
     --header-heading-color: #fff;
     --header-bg-color: #ebebeb;
-    --header-bg-color-secondary: #155799;
+    --header-bg-color-secondary: #005883;
 
     --section-headings-color: #159957;
     --body-text-color: #606c71;
@@ -33,7 +33,7 @@ body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    color: var(--body-text-color);
+    color: var(--body-text-color)
 }
 
 a {
@@ -78,6 +78,7 @@ a {
 
 .main-content {
     word-wrap: break-word;
+    min-height: 300px;
 }
 .main-content:first-child {
     margin-top: 0;
@@ -139,10 +140,12 @@ pre {
     margin-bottom: 1rem;
 }
 
-.site-footer {
+footer {
     padding-top: 2rem;
     margin-top: 2rem;
     border-top: solid 1px var(--hr-border-color);
+    background-color: var(--header-bg-color-secondary);
+    height: 125px;
 }
 
 .site-footer-owner {
