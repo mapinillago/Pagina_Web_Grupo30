@@ -1,27 +1,36 @@
 @import "normalize.css";
-@import "estilo.css";
 
-/**  * Variables.  */
+/**  * VARIABLES  */
+
 :root {
-    --large-breakpoint: 64em;
-    --medium-breakpoint: 42em;
+    --color-principal: #005883;
+    --color-secundario: #ebebeb;
+    --color-terciario: #f47920;
 
-    --header-heading-color: #fff;
-    --header-bg-color: #ebebeb;
-    --header-bg-color-secondary: #005883;
+    --color-texto: #606c71;
+    --color-url: #1e6bb8;
 
-    --section-headings-color: #159957;
-    --body-text-color: #606c71;
-    --body-link-color: #1e6bb8;
-    --blockquote-text-color: #819198;
-
-    --code-bg-color: #f3f6fa;
-    --code-text-color: #567482;
-
-    --border-color: #dce6f0;
-    --table-border-color: #e9ebec;
-    --hr-border-color: #eff0f1;
+    --color-code-bg: #f3f6fa;
+    --color-code-text: #567482;
+    --color-code-border: #dce6f0;
 }
+
+/* ENCABEZADO */
+
+.page-header {
+    color: var(--color-terciario);
+    text-align: center;
+    background-color: var(--color-secundario);
+    height: 100px;
+
+}
+.page-header img,.page-header nav {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 10px;
+}
+
+/* CUERPO */
 
 * {
     box-sizing: border-box;
@@ -33,11 +42,11 @@ body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    color: var(--body-text-color)
+    color: var(--color-texto)
 }
 
 a {
-    color: var(--body-link-color);
+    color: var(--color-url);
     text-decoration: none;
 }
 
@@ -63,19 +72,6 @@ a {
     margin-left: 1rem;
 }
 
-.page-header {
-    color: var(--header-heading-color);
-    text-align: center;
-    background-color: var(--header-bg-color);
-    height: 100px;
-
-}
-.page-header img,.page-header nav {
-    display: inline-block;
-    vertical-align: middle;
-    padding-top: 10px;
-}
-
 .main-content {
     word-wrap: break-word;
     min-height: 300px;
@@ -88,28 +84,19 @@ img {
     max-width: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-weight: normal;
-    color: var(--section-headings-color);
-}
-
-p {
-    margin-bottom: 1em;
+    color: var(--color-principal);
 }
 
 code {
     padding: 2px 4px;
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-size: 0.9rem;
-    color: var(--code-text-color);
-    background-color: var(--code-bg-color);
+    color: var(--color-code-text);
+    background-color: var(--color-code-bg);
     border-radius: 0.3rem;
 }
 
@@ -118,17 +105,17 @@ pre {
     margin-top: 0;
     margin-bottom: 1rem;
     font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    color: var(--code-text-color);
+    color: var(--color-code-text);
     word-wrap: normal;
-    background-color: var(--code-bg-color);
-    border: solid 1px var(--border-color);
+    background-color: var(--color-code-bg);
+    border: solid 1px var(--color-code-border);
     border-radius: 0.3rem;
 }
 > code {
     padding: 0;
     margin: 0;
     font-size: 0.9rem;
-    color: var(--code-text-color);
+    color: var(--color-code-text);
     word-break: normal;
     white-space: pre;
     background: transparent;
@@ -140,23 +127,41 @@ pre {
     margin-bottom: 1rem;
 }
 
+/* PIE DE PAGINA */
+
 footer {
-    padding-top: 2rem;
-    margin-top: 2rem;
-    border-top: solid 1px var(--hr-border-color);
-    background-color: var(--header-bg-color-secondary);
-    height: 125px;
+    padding-top: 0;
+    margin-top: 0;
+    background-color: var(--color-principal);
+    height: 150px;
 }
 
-.site-footer-owner {
+footer div, footer a{
+    display: inline-block;
+}
+
+#creditos{
+    font-size: 12px;
+    color: var(--color-terciario);
+}
+
+#contador{
+
+}
+
+.footer-counter {
     display: block;
     font-weight: bold;
 }
 
-.site-footer-credits {
-    color: var(--blockquote-text-color);
+.footer-credits {
+    margin: 4px;
+    padding-left: 15px;
+    font-weight: bold;
+    display: block;
 }
 
+/* MENU */
 
 /* Clearfix */
 .clear:before, .clear:after {
@@ -197,7 +202,7 @@ nav li {
 }
 
 nav a {
-    color: #f47920;
+    color: var(--color-terciario);
     display: inline-block;
     width: 100px;
     text-align: center;
@@ -215,6 +220,6 @@ nav li:last-child a {
 }
 
 nav a:hover, nav a:active {
-    background-color: #f47920;
+    background-color: var(--color-terciario);
     color: #FFF;
 }
