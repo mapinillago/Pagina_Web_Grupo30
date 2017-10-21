@@ -27,6 +27,7 @@
     height: 100px;
 
 }
+
 .page-header img,.page-header nav {
     display: inline-block;
     vertical-align: middle;
@@ -45,7 +46,8 @@ body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    color: var(--color-texto)
+    color: var(--color-texto);
+    height: 100%;
 }
 
 a {
@@ -53,33 +55,12 @@ a {
     text-decoration: none;
 }
 
-.btn {
-    display: inline-block;
-    margin-bottom: 1rem;
-    color: rgba(255, 255, 255, 0.7);
-    background-color: rgba(255, 255, 255, 0.08);
-    border-color: rgba(255, 255, 255, 0.2);
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 0.3rem;
-    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-}
-.btn:hover {
-     color: rgba(255, 255, 255, 0.8);
-     text-decoration: none;
-     background-color: rgba(255, 255, 255, 0.2);
-     border-color: rgba(255, 255, 255, 0.3);
- }
-
-+ .btn {
-    margin-left: 1rem;
-}
-
 div#contenedor {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto -160px;
     overflow: hidden;
+    min-height: 100%;
+    position: relative;
 }
 
 div#contenedor section {
@@ -93,6 +74,11 @@ div#contenedor aside {
     height: auto;
     margin-left: 2%;
     margin-top: 15px;
+}
+
+#contenido{
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 article {
@@ -148,6 +134,34 @@ pre {
     margin-bottom: 1rem;
 }
 
+.btn {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.3rem;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+
+.btn:hover {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
++ .btn {
+    margin-left: 1rem;
+}
+
+.clear{
+    height: 160px;
+    clear: both;
+}
+
 /* PIE DE PAGINA */
 
 footer {
@@ -156,10 +170,13 @@ footer {
     background-color: var(--color-azul);
     height: 160px;
     align-items: center;
+    width: 100%;
+    position: relative;
 }
 
 div#footer{
-    max-width: auto;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 div#creditos {
