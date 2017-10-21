@@ -3,12 +3,15 @@
 /**  * VARIABLES  */
 
 :root {
-    --color-principal: #005883;
-    --color-secundario: #ebebeb;
-    --color-terciario: #f47920;
+    --color-azul: #005883;
+    --color-gris: #ebebeb;
+    --color-naranja: #f47920;
+    --color-amarillo: #F0B429;
+    --color-verde: #50B748;
+    --color-violeta: #A54686;
 
-    --color-texto: #606c71;
-    --color-url: #1e6bb8;
+    --color-texto: #333333;
+    --color-url: #43C7F4;
 
     --color-code-bg: #f3f6fa;
     --color-code-text: #567482;
@@ -18,9 +21,9 @@
 /* ENCABEZADO */
 
 .page-header {
-    color: var(--color-terciario);
+    color: var(--color-naranja);
     text-align: center;
-    background-color: var(--color-secundario);
+    background-color: var(--color-gris);
     height: 100px;
 
 }
@@ -38,7 +41,6 @@
 
 body {
     padding: 0;
-    margin: 0;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -72,12 +74,29 @@ a {
     margin-left: 1rem;
 }
 
-.main-content {
-    word-wrap: break-word;
-    min-height: 300px;
+div#contenedor {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
 }
-.main-content:first-child {
-    margin-top: 0;
+
+div#contenedor section {
+    float: left;
+    width: 70%;
+}
+
+div#contenedor aside {
+    float: left;
+    width: 25%;
+    height: auto;
+    margin-left: 5%;
+}
+
+article {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: justify;
 }
 
 img {
@@ -88,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-weight: normal;
-    color: var(--color-principal);
+    color: var(--color-azul);
 }
 
 code {
@@ -132,7 +151,7 @@ pre {
 footer {
     padding-top: 0;
     margin-top: 0;
-    background-color: var(--color-principal);
+    background-color: var(--color-azul);
     height: 150px;
 }
 
@@ -141,25 +160,24 @@ footer div, footer a{
 }
 
 #creditos{
-    font-size: 12px;
-    color: var(--color-terciario);
+    font-size: 14px;
+    color: var(--color-naranja);
+    font-weight: bold;
+    margin: 4px;
+    padding-left: 15px;
+    display: inline-block;
+    float: left;
 }
 
 #contador{
-
+  font-size: 14px;
+  color: var(--color-naranja);
+  font-weight: bold;
+  display: inline-block;
+  float: right;
+  margin-right: 20px;
 }
 
-.footer-counter {
-    display: block;
-    font-weight: bold;
-}
-
-.footer-credits {
-    margin: 4px;
-    padding-left: 15px;
-    font-weight: bold;
-    display: block;
-}
 
 /* MENU */
 
@@ -202,7 +220,7 @@ nav li {
 }
 
 nav a {
-    color: var(--color-terciario);
+    color: var(--color-naranja);
     display: inline-block;
     width: 100px;
     text-align: center;
@@ -220,6 +238,6 @@ nav li:last-child a {
 }
 
 nav a:hover, nav a:active {
-    background-color: var(--color-terciario);
+    background-color: var(--color-naranja);
     color: #FFF;
 }
