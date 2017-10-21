@@ -214,7 +214,7 @@ nav {
 nav ul {
     padding: 0;
     margin: 0 auto;
-    width: 500px;
+    width: 600px;
     height: 40px;
 }
 
@@ -226,7 +226,7 @@ nav li {
 nav a {
     color: var(--color-naranja);
     display: inline-block;
-    width: 100px;
+    width: 120px;
     text-align: center;
     line-height: 40px;
 }
