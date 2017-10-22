@@ -57,10 +57,8 @@ a {
 
 div#contenedor {
     width: 100%;
-    margin: 0 auto -160px;
+    margin: 0 auto;
     overflow: hidden;
-    min-height: 100%;
-    position: relative;
 }
 
 div#contenedor section {
@@ -170,8 +168,6 @@ footer {
     background-color: var(--color-azul);
     height: 160px;
     align-items: center;
-    width: 100%;
-    position: relative;
 }
 
 div#footer{
