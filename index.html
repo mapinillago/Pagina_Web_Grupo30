@@ -15,26 +15,29 @@
 </head>
 
 <body>
-<header class="page-header">
-  <a href="https://www.unad.edu.co" target="_blank"><img src="img/logoUNAD.png" alt="Universidad Nacional Abierta y a Distancia" height="80%"></a>
-  <nav>
-    <ul>
-      <li><a href="#">INICIO <i class="fa fa-home" aria-hidden="true"></i></a></li>
-      <li><a href="#">GIT <i class="fa fa-git" aria-hidden="true"></i> <i class="fa fa-github" aria-hidden="true"></i></a></li>
-      <!-- Submenu (Por ahora deshabilitado)
-        <ul>
-          <li><a href="#">GITHUB</a></li>
-        </ul>
-      -->
-      <li><a href="#">HTML <i class="fa fa-html5" aria-hidden="true"></i></a></li>
-      <li><a href="#">CSS <i class="fa fa-css3" aria-hidden="true"></i></a></li>
-      <li><a href="#">AUTORES <i class="fa fa-users" aria-hidden="true"></i></a></li>
-    </ul>
-  </nav>
-</header>
 
 <div id="contenedor">
-  <section>
+  <header class="page-header">
+    <a href="https://www.unad.edu.co" target="_blank"><img src="img/logoUNAD.png" alt="Universidad Nacional Abierta y a Distancia" height="80%"></a>
+     <nav id="nav" role="navigation"> <a href="#nav" title="Show navigation">Mostrar Menu</a> <a href="#" title="Hide navigation">Ocultar Menu</a>
+      <ul class="clearfix">
+        <li><a href="index.html">INICIO <i class="fa fa-home" aria-hidden="true"></i></a></li>
+        <li><a href="#">GIT <i class="fa fa-git" aria-hidden="true"></i> <i class="fa fa-github" aria-hidden="true"></i></a>
+          <!-- Submenu -->
+          <ul>
+            <li><a href="#">GIT</a></li>
+            <li><a href="#">GITHUB</a></li>
+          </ul>
+        </li>
+        <li><a href="#">HTML <i class="fa fa-html5" aria-hidden="true"></i></a></li>
+        <li><a href="#">CSS <i class="fa fa-css3" aria-hidden="true"></i></a></li>
+        <li><a href="#">AUTORES <i class="fa fa-users" aria-hidden="true"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="contenido">
+    <section>
     <article >
       <h2>Introducción</h2>
       <p>Bienvenido al Objeto Virtual de Información (OVI) de Diseño de Sitios Web, diseñado para que pueda adquirir los conocimientos básicos para el uso de GIT, Github y Github Pages para la gestión de proyectos colaborativos y el uso de HTML5 y CCS3 para la creación de contenido en formato web (Página y Sitios Web)</p>
@@ -53,15 +56,14 @@
       </ul>
     </article>
   </section>
+  </div>
 
   <aside class="twitter">
-  <a class="twitter-timeline" data-lang="es" data-width="300px" data-height="590px" data-link-color="#005883" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <a class="twitter-timeline" data-lang="es" data-width="300px" data-height="580px" data-link-color="#005883" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
   </aside>
+
+  <article><button class="button"><span>Siguiente</span></button></article>
 </div>
-
-<article class="btn">
-
-</article>
 
 <footer>
   <div id="footer">
