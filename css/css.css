@@ -78,7 +78,7 @@ div#contenedor section {
 div#contenedor aside {
     float: left;
     width: 25%;
-    height: auto;
+    height: inherit;
     margin-left: 2%;
     margin-top: 15px;
 }
@@ -92,6 +92,11 @@ article {
   margin-left: 20px;
   margin-right: 20px;
   text-align: justify;
+}
+
+.button {
+    width: 100%;
+    text-align: center;
 }
 
 @media only screen and ( max-width: 700px ) {
@@ -151,7 +156,45 @@ pre {
     margin-bottom: 1rem;
 }
 
-.button {
+.after {
+    border-radius: 4px;
+    background-color: var(--color-amarillo);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 120px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    position: relative;
+}
+
+.after span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.after span:before {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    transition: 0.5s;
+}
+
+.after:hover span {
+    padding-left: 15px;
+}
+
+.after:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.before {
     border-radius: 4px;
     background-color: var(--color-verde);
     border: none;
@@ -165,27 +208,25 @@ pre {
     margin: 5px;
 }
 
-.button span {
+.before span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
 }
 
-.button span:after {
-    content: '\00bb';
+.before span:after {
     position: absolute;
     opacity: 0;
     top: 0;
-    right: -20px;
     transition: 0.5s;
 }
 
-.button:hover span {
-    padding-right: 25px;
+.before:hover span {
+    padding-right: 15px;
 }
 
-.button:hover span:after {
+.before:hover span:after {
     opacity: 1;
     right: 0;
 }
