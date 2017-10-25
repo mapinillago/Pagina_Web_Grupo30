@@ -415,7 +415,7 @@ div#contador {
     .page-header {
         text-align: center;
         background-color: transparent;
-        height: 100px;
+        height: 50px;
     }
     .page-header #nav {
         padding: 0;
